@@ -1,0 +1,44 @@
+{
+  "name": "adna-fika-agestifanka-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Revolutionary Digital DNA Portfolio - Adna Fika Agestifanka's Personal Brand Masterpiece",
+  "author": "Adna Fika Agestifanka",
+  "keywords": ["portfolio", "personal-brand", "digital-dna", "innovative", "interactive"],
+  "homepage": "https://adna-portfolio.vercel.app",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.0.0",
+    "lucide-react": "^0.468.0",
+    "next": "15.1.3",
+    "next-seo": "^6.6.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-intersection-observer": "^9.14.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@tailwindcss/postcss": "^4.0.1",
+    "@types/node": "^22.10.5",
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.1.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.0.0"
+  }
+}
