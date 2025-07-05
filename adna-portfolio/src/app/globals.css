@@ -56,8 +56,8 @@
   }
   
   body {
-    @apply bg-gradient-to-br from-neural-50 via-white to-primary-50 dark:from-neural-950 dark:via-neural-900 dark:to-primary-950;
-    @apply text-neural-900 dark:text-neural-100;
+    @apply bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-slate-950 dark:via-slate-900 dark:to-blue-950;
+    @apply text-slate-900 dark:text-slate-100;
     @apply antialiased;
     background-attachment: fixed;
     transition: all var(--timing-medium) var(--easing-smooth);
@@ -69,24 +69,24 @@
   }
   
   ::-webkit-scrollbar-track {
-    @apply bg-neural-100 dark:bg-neural-800;
+    @apply bg-slate-100 dark:bg-slate-800;
   }
   
   ::-webkit-scrollbar-thumb {
-    @apply bg-gradient-to-b from-primary-500 to-secondary-500 rounded-full;
+    @apply bg-gradient-to-b from-blue-500 to-purple-500 rounded-full;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    @apply from-primary-600 to-secondary-600;
+    @apply from-blue-600 to-purple-600;
   }
   
   /* Selection styles */
   ::selection {
-    @apply bg-primary-500/20 text-primary-900;
+    @apply bg-blue-500/20 text-blue-900;
   }
   
   ::-moz-selection {
-    @apply bg-primary-500/20 text-primary-900;
+    @apply bg-blue-500/20 text-blue-900;
   }
 }
 
@@ -111,7 +111,7 @@
   
   /* Animated gradient text */
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500;
+    @apply bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500;
     @apply bg-clip-text text-transparent;
     background-size: 200% auto;
     animation: gradientShift 3s ease infinite;
@@ -120,16 +120,16 @@
   /* DNA helix button */
   .dna-button {
     @apply relative overflow-hidden;
-    @apply bg-gradient-to-r from-primary-500 to-secondary-500;
+    @apply bg-gradient-to-r from-blue-500 to-purple-500;
     @apply text-white font-medium py-3 px-6 rounded-full;
     @apply transition-all duration-300 ease-out;
-    @apply hover:scale-105 hover:shadow-xl hover:shadow-primary-500/25;
+    @apply hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25;
   }
   
   .dna-button::before {
     content: '';
     @apply absolute inset-0;
-    @apply bg-gradient-to-r from-secondary-500 to-accent-500;
+    @apply bg-gradient-to-r from-purple-500 to-orange-500;
     @apply opacity-0 transition-opacity duration-300;
   }
   
@@ -149,8 +149,8 @@
   
   /* Morphing container */
   .morphing-container {
-    @apply bg-gradient-to-br from-primary-100 to-secondary-100;
-    @apply dark:from-primary-900/30 dark:to-secondary-900/30;
+    @apply bg-gradient-to-br from-blue-100 to-purple-100;
+    @apply dark:from-blue-900/30 dark:to-purple-900/30;
     animation: morphing 6s ease-in-out infinite;
   }
   
@@ -163,7 +163,7 @@
   .interactive-highlight::after {
     content: '';
     @apply absolute bottom-0 left-0 w-0 h-0.5;
-    @apply bg-gradient-to-r from-primary-500 to-secondary-500;
+    @apply bg-gradient-to-r from-blue-500 to-purple-500;
     @apply transition-all duration-300 ease-out;
   }
   
@@ -188,7 +188,7 @@
   
   /* Loading spinner */
   .loading-spinner {
-    @apply w-6 h-6 border-2 border-primary-200 border-t-primary-500 rounded-full;
+    @apply w-6 h-6 border-2 border-blue-200 border-t-blue-500 rounded-full;
     animation: spin 1s linear infinite;
   }
 }
@@ -250,7 +250,7 @@
 
 /* Enhanced focus styles for accessibility */
 :focus-visible {
-  @apply outline-none ring-2 ring-primary-500 ring-offset-2 ring-offset-white dark:ring-offset-neural-900;
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2 ring-offset-white dark:ring-offset-slate-900;
 }
 
 /* Reduced motion preferences */

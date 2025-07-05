@@ -140,7 +140,7 @@ export function HeroSection() {
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-50/80 via-white/90 to-secondary-50/80 dark:from-neural-950/90 dark:via-neural-900/95 dark:to-primary-950/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white/90 to-purple-50/80 dark:from-slate-950/90 dark:via-slate-900/95 dark:to-blue-950/90" />
 
       {/* Main Content */}
       <div className="relative z-10 section-container text-center">
@@ -156,14 +156,14 @@ export function HeroSection() {
             className="mb-6"
           >
             <div className="glass rounded-full px-6 py-3 inline-flex items-center gap-3 mb-4">
-              <SparklesIcon className="w-5 h-5 text-primary-500 animate-pulse" />
-              <span className="text-sm font-medium text-neural-700 dark:text-neural-300">
+              <SparklesIcon className="w-5 h-5 text-blue-500 animate-pulse" />
+              <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
                 {greetingData.greeting} • {greetingData.currentTime} • {greetingData.dynamicStatus}
               </span>
             </div>
             
             <motion.p 
-              className="text-lg text-neural-600 dark:text-neural-400"
+              className="text-lg text-slate-600 dark:text-slate-400"
               key={greetingData.personalMessage}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -194,7 +194,7 @@ export function HeroSection() {
             </motion.h1>
             
             <motion.h2 
-              className="text-2xl md:text-3xl font-medium text-neural-700 dark:text-neural-300"
+              className="text-2xl md:text-3xl font-medium text-slate-700 dark:text-slate-300"
               variants={heroAnimations.subtitle}
             >
               {personalData.title}
@@ -207,7 +207,7 @@ export function HeroSection() {
             variants={heroAnimations.description}
           >
             <motion.p 
-              className="text-xl md:text-2xl text-neural-600 dark:text-neural-400 max-w-3xl mx-auto leading-relaxed"
+              className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed"
               key={currentQuoteIndex}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -239,7 +239,7 @@ export function HeroSection() {
             </motion.button>
 
             <motion.button
-              className="px-6 py-3 border-2 border-primary-500 text-primary-500 rounded-full font-medium hover:bg-primary-500 hover:text-white transition-all duration-300"
+              className="px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-500 hover:text-white transition-all duration-300"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => {
@@ -258,24 +258,24 @@ export function HeroSection() {
             whileHover={{ scale: 1.02 }}
           >
             <div className="flex items-center justify-between mb-3">
-              <span className="text-sm font-medium text-neural-600 dark:text-neural-400">
+              <span className="text-sm font-medium text-slate-600 dark:text-slate-400">
                 Current Status
               </span>
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
             </div>
             
-            <p className="text-neural-800 dark:text-neural-200 font-medium mb-2">
+            <p className="text-slate-800 dark:text-slate-200 font-medium mb-2">
               {greetingData.currentFocus}
             </p>
             
-            <div className="flex items-center justify-between text-sm text-neural-600 dark:text-neural-400">
+            <div className="flex items-center justify-between text-sm text-slate-600 dark:text-slate-400">
               <span>Energy Level</span>
               <span className="font-mono">{greetingData.energyLevel}%</span>
             </div>
             
-            <div className="w-full bg-neural-200 dark:bg-neural-700 rounded-full h-2 mt-2">
+            <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2 mt-2">
               <motion.div 
-                className="bg-gradient-to-r from-primary-500 to-secondary-500 h-2 rounded-full"
+                className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full"
                 initial={{ width: 0 }}
                 animate={{ width: `${greetingData.energyLevel}%` }}
                 transition={{ duration: 2, delay: 1 }}
@@ -286,13 +286,13 @@ export function HeroSection() {
 
         {/* Scroll Indicator */}
         <motion.button
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-neural-400 hover:text-primary-500 transition-colors group"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-slate-400 hover:text-blue-500 transition-colors group"
           onClick={scrollToNext}
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
           <div className="flex flex-col items-center gap-2">
-            <span className="text-sm font-medium group-hover:text-primary-500 transition-colors">
+            <span className="text-sm font-medium group-hover:text-blue-500 transition-colors">
               Discover More
             </span>
             <ChevronDownIcon className="w-6 h-6 group-hover:translate-y-1 transition-transform" />
@@ -302,7 +302,7 @@ export function HeroSection() {
 
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5 dark:opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-500 via-secondary-500 to-accent-500 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500 mix-blend-multiply" />
       </div>
     </motion.section>
   );
